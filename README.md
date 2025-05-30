@@ -1,28 +1,28 @@
 # 🎓 EduView AR – Augmented Reality Visualizer for Mathematical Equations
 
 ## 📌 Overview
-**EduView AR** is an innovative augmented reality application that brings complex mathematical equations to life through immersive 3D visualizations. Designed to enhance learning and conceptual clarity, the app allows users to scan mathematical expressions from images or PDFs and view corresponding 3D models directly in an AR environment.
+**EduView AR** is an innovative augmented reality application that visualizes complex mathematical equations in real-time using immersive 3D models. By scanning math expressions from images or PDFs, users can interact with corresponding 3D shapes within their physical environment, making abstract concepts more tangible and intuitive.
 
-Whether you're a student, educator, or curious learner, EduView AR transforms static equations into interactive, manipulable 3D objects that aid deeper understanding.
+Built using **Sceneform** and **ARCore**, EduView AR brings modern AR experiences into education, allowing users to explore geometry and calculus in a whole new dimension.
 
 ---
 
 ## 🚀 Key Features
 
 - 📷 **OCR-Based Equation Detection**  
-  Detects and extracts math expressions from scanned images or uploaded PDFs using Optical Character Recognition.
+  Extracts mathematical equations from images and PDFs using Optical Character Recognition.
 
-- 📐 **3D Visualization of Equations**  
-  Renders mathematical structures like spheres, paraboloids, and more using prebuilt `.j3o` models with AR integration.
+- 📐 **3D Equation Rendering**  
+  Displays 3D models such as spheres, paraboloids, and other geometric forms based on the detected equation.
 
-- 🎮 **Interactive Model Controls**  
-  Rotate, scale, and zoom 3D models to explore different perspectives of each equation.
+- ✋ **Interactive Controls**  
+  Scale, rotate, and position the 3D model directly in the AR space.
 
-- 📱 **Live Camera + Marker-Based AR**  
-  Combines real-time camera feed with marker detection for accurate AR placement.
+- 📱 **Sceneform + ARCore Integration**  
+  Delivers stable, markerless AR experiences with real-world environmental tracking.
 
-- 🧩 **Multi-Input Options**  
-  Supports input through image capture or PDF upload for flexible usage.
+- 🧠 **Educational Focus**  
+  Aims to assist students in visualizing mathematical concepts more effectively.
 
 ---
 
@@ -30,21 +30,25 @@ Whether you're a student, educator, or curious learner, EduView AR transforms st
 
 | Component      | Technology                            |
 |----------------|----------------------------------------|
-| AR Engine      | ARToolKitX 1.1.19                      |
-| 3D Engine      | jMonkeyEngine 3.7.0                    |
-| Programming    | Java 17, Android SDK                   |
-| Tools Used     | Android Studio (Meerkat 2024.3.1), Gradle 8.9 |
+| AR Engine      | ARCore (Google), Sceneform SDK         |
+| 3D Rendering   | Sceneform `.sfb` / `.glb` model support |
+| OCR            | ML Kit or Tesseract                    |
+| Platform       | Android (Java)                         |
+| Tools Used     | Android Studio, Gradle, Java 17        |
 
 ---
 
 ## 🎯 Purpose & Impact
-**EduView AR** was built with the goal of making mathematics **more visual, interactive, and accessible**. It bridges the gap between abstract equations and real-world understanding by allowing students to literally *see* the shape and behavior of mathematical forms.
+**EduView AR** is designed to revolutionize how students perceive mathematics by turning static equations into interactive, real-world objects. It helps:
+- Bridge theory and visualization
+- Improve concept retention
+- Make math more engaging and enjoyable
 
-This tool can be particularly helpful for:
-- High school and college students
-- Teachers seeking visual aids
-- AR learning experience researchers
+Ideal for:
+- Students learning geometry, algebra, and calculus
+- Teachers looking for AR-based visual aids
+- Researchers exploring educational technology
 
 ---
 
-> 📘 *Making math visible – one equation at a time.*
+> 🔍 *See math in motion. Interact, learn, and understand with EduView AR.*
