@@ -52,3 +52,15 @@ Ideal for:
 ---
 
 > 🔍 *See math in motion. Interact, learn, and understand with EduView AR.*
+
+## ⚠️ Main Note
+
+> ❗ **Important Notice:**  
+This project encountered compatibility issues due to changes and deprecation in the official **Sceneform** and **ARCore** support. As a result, the project may not function as expected with the latest versions of Android Studio or AR libraries.
+
+Anyone intending to use or contribute to this project should ensure:
+- Proper versions of **Sceneform SDK** and **ARCore** are used (preferably legacy or compatible forks).
+- Dependencies and Gradle configurations are correctly aligned with the working setup.
+- Testing is done on supported Android devices with ARCore capabilities.
+
+We recommend checking for updated forks or open-source alternatives to maintain stability in newer environments.
