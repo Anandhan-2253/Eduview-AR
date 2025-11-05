@@ -1,66 +1,103 @@
-# 🎓 EduView AR – Augmented Reality Visualizer for Mathematical Equations
+# 🎓 Educational Keylogger - Cybersecurity Awareness Demonstration Tool
 
 ## 📌 Overview
-**EduView AR** is an innovative augmented reality application that visualizes complex mathematical equations in real-time using immersive 3D models. By scanning math expressions from images or PDFs, users can interact with corresponding 3D shapes within their physical environment, making abstract concepts more tangible and intuitive.
+**Educational Keylogger** is a Python-based security demonstration tool designed to showcase how keyloggers operate and raise awareness about cybersecurity threats.  
+This tool captures keystrokes and sends them to a Telegram bot at configurable intervals, serving as an **educational demonstration** of how malicious software can compromise personal information.
 
-Built using **Sceneform** and **ARCore**, EduView AR brings modern AR experiences into education, allowing users to explore geometry and calculus in a whole new dimension.
+Built using Python with keyboard monitoring capabilities, this project helps students and security professionals understand the importance of downloading software from trusted sources and implementing proper security measures.
 
 ---
 
 ## 🚀 Key Features
 
-- 📷 **OCR-Based Equation Detection**  
-  Extracts mathematical equations from images and PDFs using Optical Character Recognition.
+### ⌨️ Advanced Key Capture
+Accurately captures all keystrokes including special keys, function keys, and modifier combinations with enhanced accuracy.
 
-- 📐 **3D Equation Rendering**  
-  Displays 3D models such as spheres, paraboloids, and other geometric forms based on the detected equation.
+### 🤖 Telegram Integration
+Automatically sends captured data to a Telegram bot at configurable intervals with formatted reports.
 
-- ✋ **Interactive Controls**  
-  Scale, rotate, and position the 3D model directly in the AR space.
+### ⏰ Flexible Timing Options
+Configurable auto-send intervals (default: **20 seconds**) and manual trigger capability using hotkeys.
 
-- 📱 **Sceneform + ARCore Integration**  
-  Delivers stable, markerless AR experiences with real-world environmental tracking.
+### 📊 Detailed Logging System
+Comprehensive logging with timestamps, key details, session information, and local JSON backups.
 
-- 🧠 **Educational Focus**  
-  Aims to assist students in visualizing mathematical concepts more effectively.
+### 🔧 Manual Control
+Instant manual data transmission using **Ctrl + Alt + M** hotkey for on-demand demonstrations.
+
+### 💾 Local Data Backup
+Automatic local backup of all captured data in structured **JSON** format for analysis.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component      | Technology                            |
-|----------------|----------------------------------------|
-| AR Engine      | ARCore (Google), Sceneform SDK         |
-| 3D Rendering   | Sceneform `.sfb` / `.glb` model support |
-| OCR            | ML Kit or Tesseract                    |
-| Platform       | Android (Java)                         |
-| Tools Used     | Android Studio, Gradle, Java 17        |
+| Component | Technology |
+|------------|-------------|
+| **Language** | Python 3.6+ |
+| **Key Monitoring** | `keyboard` library |
+| **Data Transmission** | `requests` (Telegram Bot API) |
+| **Data Format** | JSON for local storage |
+| **Multithreading** | `threading` module |
+| **Platform** | Cross-platform (Windows, Linux, macOS) |
 
 ---
 
-## 🎯 Purpose & Impact
-**EduView AR** is designed to revolutionize how students perceive mathematics by turning static equations into interactive, real-world objects. It helps:
-- Bridge theory and visualization
-- Improve concept retention
-- Make math more engaging and enjoyable
+## 🎯 Educational Purpose & Impact
 
-Ideal for:
-- Students learning geometry, algebra, and calculus
-- Teachers looking for AR-based visual aids
-- Researchers exploring educational technology
+**Educational Keylogger** is designed to demonstrate real-world cybersecurity threats in a **controlled environment**. It helps:
+
+- 🧠 **Understand Malware Operations:** Show how keyloggers capture sensitive information  
+- 🔐 **Raise Security Awareness:** Demonstrate the importance of software source verification  
+- 🛡️ **Teach Prevention Methods:** Highlight antivirus and monitoring solutions  
+- 👨‍🏫 **Support Cybersecurity Education:** Provide hands-on demonstration for security courses  
+
+**Ideal for:**
+- Cybersecurity students and educators  
+- Penetration testers (with authorization)  
+- Security awareness training workshops  
+- Ethical hacking demonstrations  
 
 ---
 
-> 🔍 *See math in motion. Interact, learn, and understand with EduView AR.*
+## ⚠️ Legal & Ethical Disclaimer
 
-## ⚠️ Main Note
+### 🔒 IMPORTANT NOTICE:
+This tool is created **STRICTLY FOR EDUCATIONAL PURPOSES ONLY**.  
+Unauthorized use is **illegal and unethical**.
 
-> ❗ **Important Notice:**  
-This project encountered compatibility issues due to changes and deprecation in the official **Sceneform** and **ARCore** support. As a result, the project may not function as expected with the latest versions of Android Studio or AR libraries.
+#### ✅ Permitted Uses:
+- Educational demonstrations in academic settings  
+- Authorized penetration testing with written consent  
+- Cybersecurity awareness training  
+- Personal systems you own  
 
-Anyone intending to use or contribute to this project should ensure:
-- Proper versions of **Sceneform SDK** and **ARCore** are used (preferably legacy or compatible forks).
-- Dependencies and Gradle configurations are correctly aligned with the working setup.
-- Testing is done on supported Android devices with ARCore capabilities.
+#### ❌ Prohibited Uses:
+- Unauthorized surveillance  
+- Installing on systems without explicit permission  
+- Malicious or unethical activity  
+- Violating privacy laws  
 
-We recommend checking for updated forks or open-source alternatives to maintain stability in newer environments.
+> Users must ensure:  
+> - Proper authorization is obtained before testing  
+> - Compliance with local laws and regulations  
+> - Use only in controlled, educational environments  
+> - Responsible disclosure and ethical handling  
+
+---
+
+## 📋 Quick Start
+
+### 🔧 Prerequisites
+- Python 3.6 or higher  
+- Telegram account (for bot creation)  
+- Required packages: `keyboard`, `requests`
+
+---
+
+### 💻 Installation
+
+```bash
+git clone https://github.com/yourusername/educational-keylogger.git
+cd educational-keylogger
+pip install -r requirements.txt
